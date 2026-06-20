@@ -36,5 +36,12 @@ class DatabaseSeeder extends Seeder
             'password' => Hash::make('password'), // Password login: password
             'role' => 'kasir',
         ]);
+        // 3. Akun Kasir (Karyawan Tambahan)
+        User::create([
+            'name' => 'Fulan1',
+            'email' => 'kasir3@cleansy.com',
+            'password' => Hash::make('password123'),
+            'role' => 'kasir',
+        ]);
     }
 }
